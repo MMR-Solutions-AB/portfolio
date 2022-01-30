@@ -1,0 +1,337 @@
+/* Reset på alla tags */
+* {
+    /* browsers som chrome eller safari ger margin och padding till vissa element, här tar vi bort allt sånt för vi själva ska ha full kontroll */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* för en förklaring vad denna kod gör: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+}
+
+body {
+    background: white;
+    color: black; /* all text kommer få svart färg */
+    /* 
+     font-family ändrar typsnittet, och font-family attributet är 'inherit' vilket innebär
+     att alla element innanför body tagen kommer få detta typsnitt. 
+     Du kan oxå se att vi har specificerat massa olika typsnitt, browsern kommer försöka använda 
+     den första och ifall de inte finns så kommer den försöka med den nästa på tur och fortsätter så 
+     tills att någon funkar. Om ingen skulle vara tillgängligt så tar den browserns default vilket brukar vara serif
+     */
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+a {
+    /* a taggar får en blå/lila färg på sin text samt en linje under texten, här tar vi bort det för alla a taggar på sidan */
+    color: black;
+    text-decoration: none;
+}
+
+html {
+    /*
+     I html koden länkar vi till olika element med hjälp utav ett id
+     för att man ska kunna komma till en viss del utav hemsidan genom ett click.
+     Koden nedan gör så att man kommer skrolla med en animation istället för att det är instant
+     */
+    scroll-behavior: smooth;
+}
+
+/* för alla p tagar */
+p {
+    font-size: 14px;
+    line-height: 20px; /* line-height specificerar avståndet från olika rader i texten. */
+}
+
+/* Navbar - start */
+nav {
+    position: fixed; /* en blandning mellan absolute och sticky. Kommer fastna på toppen utav vår skärm */
+    top: 0px; /* kommer fastna 0px från toppen utav skärmen*/
+    width: 100%;
+    padding: 10px 20px; /* 10px topp och botten, 20px vänster och höger */
+    /* 
+    för en snabb genomgång över flexbox (100s): https://youtu.be/K74l26pE4YA
+    för en mer genomgående förklaring för flexbox: https://youtu.be/u044iM9xsWU
+    */
+    display: flex;
+    justify-content: space-between; /* Inre element kommer ha maximalt mellanrum mellan varandra horisontellt */
+    align-items: center; /* Centrera elementen vertikalt */
+    border-bottom: solid 1px black; /* solid specificerar vilken typ av linje, 1px är tjockleken, black är för färgen*/
+    background: white; /* utan en bakgrunds färg kommer man kunna se igenom vår navbar vilket kommer se väldigt konstigt ut, testa kommentera bort backgrounds färgen och skrolla så kommer du ser vad som menas*/
+    z-index: 100; /* specificerar stacking nivån, alltså vilka element som kommer hamna framför den. I vårt fall säger vi att den har 100, vilket innebär att den alltid kommer vara längst fram om inte ett annat element har 101 eller mer */
+}
+
+/* en wrapper för våra links i högra hörnet*/
+.nav-links {
+    /* 
+    för en snabb genomgång över flexbox (100s): https://youtu.be/K74l26pE4YA
+    för en mer genomgående förklaring för flexbox: https://youtu.be/u044iM9xsWU
+    */
+    display: flex; /* vi vill använda align-items i raden nedan, detta kräver att vårt element är en flexbox */
+    align-items: center; /* centrera elementen vertikalt */
+    gap: 10px; /* 10px mellanrum mellan alla bilder */
+}
+
+/* stylar alla svg's, vilket är ikonerna för github, instagram och linkedin */
+.nav-links img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer; /* ändrar muspekaren till "pointer", alltså en hand med ett finger. Detta visar anvandaren att hen kan trycka på den */
+}
+/* Navbar - end */
+
+/* Hero - start */
+.hero {
+    height: 100vh; /* 100% utav hela skärmens höjd */
+    /* 
+    för en snabb genomgång över flexbox (100s): https://youtu.be/K74l26pE4YA
+    för en mer genomgående förklaring för flexbox: https://youtu.be/u044iM9xsWU
+    */
+    display: flex;
+    justify-content: center; /* centrera elementen horisontellt */
+    align-items: center; /* centrera elementen vertikalt */
+    max-width: 1000px; /* för att texten inte blir för bred på större skärmar */
+    margin: 0 auto; /* 0px margin vertikalt, auto margin horisontellt kommer centrera vårt element */
+}
+
+/* Alla h1 taggar i ett element med .hero klassen */
+.hero h1 {
+    font-size: 48px;
+    line-height: 1; /* line-height specificerar avståndet från olika rader i texten. line-height: 1; innebär att line-height är lika med fot-size vilket är 48px i det här fallet  */
+}
+
+/* Alla p taggar i ett element med .hero klassen */
+.hero p {
+    color: #4b5563; /* en grå/blå färg */
+}
+
+/* Styler alla h1 och p tags */
+.hero h1,
+.hero p {
+    margin-bottom: 8px;
+}
+
+/* utan detta kommer vår bild och text vara exakt bredvid varandra, här ger vi det 20px mellanrum */
+.hero-img {
+    margin-right: 20px;
+}
+
+/* Alla img taggar i ett element med .hero klassen */
+.hero-img img {
+    height: 500px; /* sätter en fixed height, detta kommer ändras senare längre ner i koden för mindre skärmar */
+}
+/* Hero - end */
+
+/* Work - start */
+.work {
+    /* Kommer ge lite utrymme från toppen utav skärmen när man trycker på knappen som länkar hit */
+    /* Testa kommentera bort raden under och se hur det påverkar hemsidan */
+    scroll-margin-top: 100px;
+}
+
+.work-title {
+    text-align: center; /* centrera texten */
+    font-size: 36px;
+    line-height: 40px; /* line-height specificerar avståndet från olika rader i texten. */
+    font-weight: 700; /* tjockleken på texten - kan ha alla värden som är hundratal från och med 100 till och med 900 */
+    margin-bottom: 12px;
+}
+
+.work-subtitle {
+    color: #6b7280; /* en ljusare grå/blå färg*/
+    padding: 0px 20px 5px 20px; /* för en mer responsive design */
+    max-width: 896px; /* för en mer responsive design, kommer stoppa texten från att bli för bred på större skärmar */
+    margin: 0 auto; /* centrera vårt element, är för att assistera med raden ovan. Så att när vårt element kommer till sin max width så är den fortfarande centrerad */
+    text-align: center; /* centrera texten */
+}
+
+.chips-wrapper {
+    /* 
+    för en snabb genomgång över flexbox (100s): https://youtu.be/K74l26pE4YA
+    för en mer genomgående förklaring för flexbox: https://youtu.be/u044iM9xsWU
+    */
+    display: flex;
+    flex-wrap: wrap; /* vi låter våra element att bryta ner till en ny rad ifall det ej får plats */
+    gap: 8px; /* 8px mellanrum mellan alla våra element inuti */
+    justify-content: center; /* centrera elementen horisontellt */
+    margin: 8px 0px; /* 8px topp och botten, 0px vänster och höger */
+    padding: 0px 12px; /* för en mer responsive design, vid mindre skärmar kommer det vara padding på kanten vilket gör att texten inte rör kanten  */
+}
+
+.chip {
+    border-radius: 9999px; /* fullt rundade kanter */
+    padding: 4px 12px; /* 4px topp  och botten, 12px vänster och höger */
+    border: solid 1px black; /* solid specificerar vilken typ av linje, 1px är tjockleken, black är för färgen*/
+    font-size: 14px;
+}
+
+.projects-container {
+    /* ser till att det finns utrymme på kanterna för våra .project element på mindre skärmar  */
+    /* för att bättre förstå vad den gör, testa kommentera bort koden och kolla hur vår sida blir på mindre skärmar*/
+    padding: 0px 20px; /* 0px topp och botten, 20px väster och höger*/
+}
+
+.project {
+    margin: 40px auto; /* 40px ger mellanrum mellan alla projekt, auto centrerar elementet horisontellt*/
+    max-width: 1024px; /* för större skärmar vill vi inte att projektet ska ta upp hela skärmens bredd, detta stoppar den från att bli större än 1024px*/
+    height: 450px;
+    position: relative; /* Vi har element inuti med 'position: absolute' och vi vill att det ska vara vara relativa till detta element */
+}
+
+/* alla img taggar i .project */
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* object-fit är lite svårare att förklara, här är en 5 minuter video som förklarar det bra: https://youtu.be/gj4zoaigSqI */
+}
+
+.project-text-container {
+    position: absolute; /* för en snabb genomgång över positions (4 min): https://youtu.be/3PDQDRJq5Ls */
+    inset: 0; /* shortcut för top,right,bottom,left. Sätter alla dessa 4 värden till 0. Detta kommer se till att vårt element tar upp hela dess förälders height och width  */
+    background-color: #26262699; /* en mörk färg med låg opacity som gör bilden mörkare */
+    /* 
+    för en snabb genomgång över flexbox (100s): https://youtu.be/K74l26pE4YA
+    för en mer genomgående förklaring för flexbox: https://youtu.be/u044iM9xsWU
+    */
+    display: flex;
+    flex-direction: column; /* kommer lägga alla dess inre element på y axeln istället för den vanliga x axeln*/
+    justify-content: flex-end; /* kommer skjuta ner alla element längst ner */
+    padding: 30px; /* 30px från alla håll */
+}
+
+/* alla h3 taggar i .project-text */
+.project-text-title {
+    font-size: 36px;
+    line-height: 40px; /* line-height specificerar avståndet från olika rader i texten. */
+    color: rgb(224, 242, 254); /* en vit/blå färg */
+    font-weight: 900; /* tjockleken på texten - kan ha alla värden som är hundratal från och med 100 till och med 900 */
+}
+
+.project-text-subtitle {
+    color: rgb(240, 249, 255); /* en ljusare vit/blå färg*/
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+/* ger samma styling till båda klassera*/
+.project-text-title,
+.project-text-subtitle {
+    font-family: 'Piazzolla', serif; /* 'Piazzolla' fonten är importerad från google fonts i vårt html dokument */
+}
+/* Work - end */
+
+/* Footer - start */
+footer {
+    padding: 30px; /* 30px från alla håll */
+    background: rgb(229, 231, 235); /* en ljus grå färg*/
+}
+
+.footer-license {
+    text-align: center; /* centrera text*/
+    color: rgb(75, 85, 99); /* en mörk grå färg */
+}
+/* Footer - end */
+
+/* Components - start */
+/* Buttons */
+button {
+    border: solid 1px black; /* solid specificerar vilken typ av linje, 1px är tjockleken, black är för färgen*/
+    border-radius: 6px; /* border-radius kommer göra kanterna lite rundare */
+    width: 128px; /* en fixed width så att alla knappar är lika stora */
+    padding: 8px 0px; /* 8px topp och botten, 0px vänster och höger*/
+    background: black;
+    font-size: 14px;
+    color: white;
+    cursor: pointer; /* ändrar muspekaren till "pointer", alltså en han med ett finger. Detta visar anvandaren att hen kan trycka på den */
+}
+
+/* Vi vill ha två varianter på våra knappar, en svart och en vit.
+ Koden nedan kommer styla en följande html: <button class="white"></button> 
+ Denna knapp kommer få all styling som vi specificerat ovan, alltså border, width och allt annat.
+ Det ända vi vill ändra är färgen på bakgrunden och texten. 
+ Så vi gör det här
+ */
+/* Stylar alla button taggar med en .white class */
+button.white {
+    background: white;
+    color: black;
+}
+/* Components - end */
+
+/* Responsiveness - start*/
+/* för skärmar mindre än 1024px i bredd*/
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column; /* lägger alla element i rad på y axeln istället för den vanliga x axel */
+        padding: 12px 20px; /* 12px topp och botten, 20px väster och höger */
+        margin-top: 70px; /* för att undvika vår navbar*/
+    }
+    .hero h1 {
+        font-size: 36px;
+        line-height: 40px; /* line-height specificerar avståndet från olika rader i texten. */
+    }
+
+    .hero-img {
+        /*
+         vi behöver inte margin-right längre eftersom att texten nu befinner sig under vår bild,
+         istället behöver vi lite margin underifrån för att texten inte ska vara rakt under vår bild
+        */
+        margin-right: 0px;
+        margin-bottom: 12px;
+    }
+
+    .hero-img img {
+        /* gör bilden mindre */
+        height: 420px;
+    }
+}
+
+/* för skärmar mindre än 724px i bredd*/
+@media screen and (max-width: 724px) {
+    p {
+        /* gör alla p taggars text mindre */
+        font-size: 12px;
+        line-height: 16px; /* line-height specificerar avståndet från olika rader i texten. */
+    }
+
+    .hero {
+        height: unset; /* tar bort 100vh */
+        margin-bottom: 40px; /* för att få lite utrymme från work sektionen */
+    }
+
+    .hero h1 {
+        /* gör texten mindre */
+        font-size: 24px;
+        line-height: 32px; /* line-height specificerar avståndet från olika rader i texten. */
+    }
+
+    .hero-img img {
+        /* kommer välja den minsta utav dessa, 60vh är 60% utav hela skärmens höjd */
+        height: min(60vh, 360px);
+    }
+
+    .work-title {
+        font-size: 30px;
+        line-height: 36px; /* line-height specificerar avståndet från olika rader i texten. */
+        margin-bottom: 6px;
+    }
+    .chip {
+        /* gör chipsen allmänt mindre*/
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    .project {
+        margin: 25px auto; /* ändrar margin på y axeln från 40px till 25px */
+        height: 300px; /* sänker heighten för att bibehålla en någorlunda proportionalitet */
+    }
+
+    .project-text-title {
+        font-size: 24px;
+        line-height: 32px; /* line-height specificerar avståndet från olika rader i texten. */
+        margin-bottom: 12px;
+    }
+    .project-text {
+        padding: 20px; /* 20px från alla håll */
+    }
+}
+/* Responsiveness - end*/
