@@ -1,6 +1,6 @@
 # Portfolio
 
-Detta projekt är ett portfolio för alla Techover studenter att lära sig ifrån. Projektet är enbart byggt med HTML och CSS och ska hjälpa dig som student knypa ihop säcken för HTML och CSS genom att testa bygga något på egen hand. Ni ska alltså försöka bygga hemsidan på egen hand, men tveka inte på att be om hjälp så fort du fastnar. Vi upmanar dig även att använda koden i detta projekt som hjälp och vägledingen, all kod är väll dokumenterad men om du är osäker vad viss kod gör kan du alltid fråga handlearna så ka vi hjälpa dig förstå koncepten som är oklara.
+Detta projekt är ett portfolio för alla Techover studenter att lära sig ifrån och använda för eget bruk. Projektet är enbart byggt med HTML och CSS och ska hjälpa dig som student knypa ihop säcken för HTML och CSS genom att testa bygga något på egen hand. Ni ska alltså försöka bygga hemsidan på egen hand, men tveka inte på att be om hjälp så fort du fastnar. Vi upmanar dig även att använda koden i detta projekt som hjälp och vägledingen när du käer att du behöver det, all kod är väll dokumenterad men om du är osäker vad viss kod gör kan du alltid fråga handlearna så kan det hjälpa dig förstå koncepten som är oklara.
 
 ## Live demo 
 https://upbeat-kare-42a71f.netlify.app/
@@ -15,7 +15,7 @@ https://upbeat-kare-42a71f.netlify.app/
 7. i VS code, högerklicka på `index.html` filen och tryck på **Open with Live Server**. Detta borde öppna en browser med hemsdian automatiskt, om den inte gör det testa att manuelt navigera till http://127.0.0.1:5500/index.html.
 
 ## Om du stöter på problem
-1. hör av dig Matheus i Slack, han har satt upp detta projekt och kommer kunna hjälpa dig med alla problem du stöter på
+1. hör av dig till Matheus i Slack, han har satt upp detta projekt och kommer kunna hjälpa dig med alla problem du stöter på
 2. ifall du skulle vilja boka in en handlednings tid kan du göra det med följande handledare
     1. Matheus - https://calendly.com/matheus-mendes-1/handledning
     2. Marcus - https://calendly.com/marcuspousette/techover-handledning
