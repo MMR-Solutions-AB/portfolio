@@ -175,6 +175,18 @@ nav {
     position: relative; /* Vi har element inuti med 'position: absolute' och vi vill att det ska vara vara relativa till detta element */
 }
 
+.img-container {
+    width: 100%;
+    height: 100%;
+    position: relative; /* Vi har element inuti med 'position: absolute' och vi vill att det ska vara vara relativa till detta element */
+}
+
+.img-overlay {
+    position: absolute;
+    inset: 0; /* shortcut för top,right,bottom,left. Sätter alla dessa 4 värden till 0. Detta kommer se till att vårt element tar upp hela dess förälders height och width  */
+    background: #26262699;
+}
+
 /* alla img taggar i .project */
 .project img {
     width: 100%;
@@ -185,7 +197,6 @@ nav {
 .project-text-container {
     position: absolute; /* för en snabb genomgång över positions (4 min): https://youtu.be/3PDQDRJq5Ls */
     inset: 0; /* shortcut för top,right,bottom,left. Sätter alla dessa 4 värden till 0. Detta kommer se till att vårt element tar upp hela dess förälders height och width  */
-    background-color: #26262699; /* en mörk färg med låg opacity som gör bilden mörkare */
     /* 
     för en snabb genomgång över flexbox (100s): https://youtu.be/K74l26pE4YA
     för en mer genomgående förklaring för flexbox: https://youtu.be/u044iM9xsWU
