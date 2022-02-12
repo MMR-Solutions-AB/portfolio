@@ -6,6 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./style.css" />
 
+        <!-- Google fonts - start -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Google fonts - end -->
+
         <title>Portfolio</title>
     </head>
     <body>
@@ -63,6 +72,7 @@
                 doloribus tempora placeat laboriosam alias.
             </p>
             <div class="chips-wrapper">
+                <!-- Byter färgen på borden för var och en -->
                 <div class="chip">react</div>
                 <div class="chip">firebase</div>
                 <div class="chip">npm</div>
@@ -74,7 +84,10 @@
             </div>
             <div class="projects-container">
                 <div class="project">
-                    <img src="./project1.jpg" alt="project 1" />
+                    <div class="img-container">
+                        <img src="./project1.jpg" alt="project 1" />
+                        <div class="img-overlay"></div>
+                    </div>
                     <div class="project-text-container">
                         <h3 class="project-text-title">
                             Interactive comments section
@@ -90,7 +103,10 @@
                 </div>
 
                 <div class="project">
-                    <img src="./project2.jpg" alt="project 2" />
+                    <div class="img-container">
+                        <img src="./project2.jpg" alt="project 2" />
+                        <div class="img-overlay"></div>
+                    </div>
                     <div class="project-text-container">
                         <h3 class="project-text-title">Tip calculator app</h3>
                         <p class="project-text-subtitle">
@@ -103,7 +119,10 @@
                 </div>
 
                 <div class="project">
-                    <img src="./project3.jpg" alt="project 3" />
+                    <div class="img-container">
+                        <img src="./project3.jpg" alt="project 3" />
+                        <div class="img-overlay"></div>
+                    </div>
                     <div class="project-text-container">
                         <h3 class="project-text-title">IP Address Tracker</h3>
                         <p class="project-text-subtitle">
