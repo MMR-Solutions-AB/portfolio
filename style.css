@@ -55,7 +55,6 @@ nav {
     display: flex;
     justify-content: space-between; /* Inre element kommer ha maximalt mellanrum mellan varandra horisontellt */
     align-items: center; /* Centrera elementen vertikalt */
-    border-bottom: solid 1px black; /* solid specificerar vilken typ av linje, 1px är tjockleken, black är för färgen*/
     background: white; /* utan en bakgrunds färg kommer man kunna se igenom vår navbar vilket kommer se väldigt konstigt ut, testa kommentera bort backgrounds färgen och skrolla så kommer du ser vad som menas*/
     z-index: 100; /* specificerar stacking nivån, alltså vilka element som kommer hamna framför den. I vårt fall säger vi att den har 100, vilket innebär att den alltid kommer vara längst fram om inte ett annat element har 101 eller mer */
 }
@@ -150,7 +149,6 @@ nav {
     för en mer genomgående förklaring för flexbox: https://youtu.be/u044iM9xsWU
     */
     display: flex;
-    flex-wrap: wrap; /* vi låter våra element att bryta ner till en ny rad ifall det ej får plats */
     gap: 8px; /* 8px mellanrum mellan alla våra element inuti */
     justify-content: center; /* centrera elementen horisontellt */
     margin: 8px 0px; /* 8px topp och botten, 0px vänster och höger */
@@ -198,25 +196,24 @@ nav {
     padding: 30px; /* 30px från alla håll */
 }
 
+/* ger samma styling till båda klasserna */
+.project-text-title,
+.project-text-subtitle {
+    color: white;
+}
+
 /* alla h3 taggar i .project-text */
 .project-text-title {
     font-size: 36px;
     line-height: 40px; /* line-height specificerar avståndet från olika rader i texten. */
-    color: rgb(224, 242, 254); /* en vit/blå färg */
     font-weight: 900; /* tjockleken på texten - kan ha alla värden som är hundratal från och med 100 till och med 900 */
 }
 
 .project-text-subtitle {
-    color: rgb(240, 249, 255); /* en ljusare vit/blå färg*/
     font-size: 14px;
     margin-bottom: 12px;
 }
 
-/* ger samma styling till båda klassera*/
-.project-text-title,
-.project-text-subtitle {
-    font-family: 'Piazzolla', serif; /* 'Piazzolla' fonten är importerad från google fonts i vårt html dokument */
-}
 /* Work - end */
 
 /* Footer - start */
@@ -241,7 +238,6 @@ button {
     background: black;
     font-size: 14px;
     color: white;
-    cursor: pointer; /* ändrar muspekaren till "pointer", alltså en han med ett finger. Detta visar anvandaren att hen kan trycka på den */
 }
 
 /* Vi vill ha två varianter på våra knappar, en svart och en vit.
