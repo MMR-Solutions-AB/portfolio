@@ -161,83 +161,7 @@ nav {
     border: solid 1px black; /* solid specificerar vilken typ av linje, 1px är tjockleken, black är för färgen*/
     font-size: 14px;
 }
-
-.projects-container {
-    /* ser till att det finns utrymme på kanterna för våra .project element på mindre skärmar  */
-    /* för att bättre förstå vad den gör, testa kommentera bort koden och kolla hur vår sida blir på mindre skärmar*/
-    padding: 0px 20px; /* 0px topp och botten, 20px väster och höger*/
-}
-
-.project {
-    margin: 40px auto; /* 40px ger mellanrum mellan alla projekt, auto centrerar elementet horisontellt*/
-    max-width: 1024px; /* för större skärmar vill vi inte att projektet ska ta upp hela skärmens bredd, detta stoppar den från att bli större än 1024px*/
-    height: 450px;
-    position: relative; /* Vi har element inuti med 'position: absolute' och vi vill att det ska vara vara relativa till detta element */
-}
-
-.img-container {
-    width: 100%;
-    height: 100%;
-    position: relative; /* Vi har element inuti med 'position: absolute' och vi vill att det ska vara vara relativa till detta element */
-}
-
-.img-overlay {
-    position: absolute;
-    inset: 0; /* shortcut för top,right,bottom,left. Sätter alla dessa 4 värden till 0. Detta kommer se till att vårt element tar upp hela dess förälders height och width  */
-    background: #26262699;
-}
-
-/* alla img taggar i .project */
-.project img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* object-fit är lite svårare att förklara, här är en 5 minuter video som förklarar det bra: https://youtu.be/gj4zoaigSqI */
-}
-
-.project-text-container {
-    position: absolute; /* för en snabb genomgång över positions (4 min): https://youtu.be/3PDQDRJq5Ls */
-    inset: 0; /* shortcut för top,right,bottom,left. Sätter alla dessa 4 värden till 0. Detta kommer se till att vårt element tar upp hela dess förälders height och width  */
-    /* 
-    för en snabb genomgång över flexbox (100s): https://youtu.be/K74l26pE4YA
-    för en mer genomgående förklaring för flexbox: https://youtu.be/u044iM9xsWU
-    */
-    display: flex;
-    flex-direction: column; /* kommer lägga alla dess inre element på y axeln istället för den vanliga x axeln*/
-    justify-content: flex-end; /* kommer skjuta ner alla element längst ner */
-    padding: 30px; /* 30px från alla håll */
-}
-
-/* ger samma styling till båda klasserna */
-.project-text-title,
-.project-text-subtitle {
-    color: white;
-}
-
-/* alla h3 taggar i .project-text */
-.project-text-title {
-    font-size: 36px;
-    line-height: 40px; /* line-height specificerar avståndet från olika rader i texten. */
-    font-weight: 900; /* tjockleken på texten - kan ha alla värden som är hundratal från och med 100 till och med 900 */
-}
-
-.project-text-subtitle {
-    font-size: 14px;
-    margin-bottom: 12px;
-}
-
 /* Work - end */
-
-/* Footer - start */
-footer {
-    padding: 30px; /* 30px från alla håll */
-    background: rgb(229, 231, 235); /* en ljus grå färg*/
-}
-
-.footer-license {
-    text-align: center; /* centrera text*/
-    color: rgb(75, 85, 99); /* en mörk grå färg */
-}
-/* Footer - end */
 
 /* Components - start */
 /* Buttons */
@@ -246,20 +170,8 @@ button {
     border-radius: 6px; /* border-radius kommer göra kanterna lite rundare */
     width: 128px; /* en fixed width så att alla knappar är lika stora */
     padding: 8px 0px; /* 8px topp och botten, 0px vänster och höger*/
-    background: black;
-    font-size: 14px;
-    color: white;
-}
-
-/* Vi vill ha två varianter på våra knappar, en svart och en vit.
- Koden nedan kommer styla en följande html: <button class="white"></button> 
- Denna knapp kommer få all styling som vi specificerat ovan, alltså border, width och allt annat.
- Det ända vi vill ändra är färgen på bakgrunden och texten. 
- Så vi gör det här
- */
-/* Stylar alla button taggar med en .white class */
-button.white {
     background: white;
+    font-size: 14px;
     color: black;
 }
 /* Components - end */
@@ -325,20 +237,6 @@ button.white {
         /* gör chipsen allmänt mindre*/
         padding: 4px 10px;
         font-size: 12px;
-    }
-
-    .project {
-        margin: 25px auto; /* ändrar margin på y axeln från 40px till 25px */
-        height: 300px; /* sänker heighten för att bibehålla en någorlunda proportionalitet */
-    }
-
-    .project-text-title {
-        font-size: 24px;
-        line-height: 32px; /* line-height specificerar avståndet från olika rader i texten. */
-        margin-bottom: 12px;
-    }
-    .project-text {
-        padding: 20px; /* 20px från alla håll */
     }
 }
 /* Responsiveness - end*/
