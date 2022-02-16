@@ -12,7 +12,7 @@ https://upbeat-kare-42a71f.netlify.app/
 4. dubbeltryck på mappen, detta kommer unzippa mappen
 5. öppna den nyss unzippade mappen i VS code
 6. för nästa steg måste du ha installerat **live server** vilket är en extension i VS code. Ifall du redan har installerat **live server** kan du skippa detta steg. För att installera det trycker du på **extension** taben till vänster i VS code och sök efter **live server**, hitta den som är gjord utav *Ritwick Dey* (det borde vara den första du ser) och tryck på **install**
-7. i VS code, högerklicka på `index.html` filen och tryck på **Open with Live Server**. Detta borde öppna en browser med hemsdian automatiskt, om den inte gör det testa att manuelt navigera till http://127.0.0.1:5500/index.html.
+7. i VS code, högerklicka på `index.html` filen och tryck på **Open with Live Server**. Detta borde öppna en browser med hemsidan automatiskt, om den inte gör det testa att manuellt navigera till http://127.0.0.1:5500/index.html.
 
 ## Om du stöter på problem
 1. hör av dig till Matheus i Slack, han har satt upp detta projekt och kommer kunna hjälpa dig med alla problem du stöter på
