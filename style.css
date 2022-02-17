@@ -223,7 +223,7 @@ button:hover {
     }
 
     .hero {
-        height: unset; /* tar bort 100vh */
+        min-height: unset; /* tar bort 85vh */
         margin-bottom: 40px; /* för att få lite utrymme från work sektionen */
     }
 
