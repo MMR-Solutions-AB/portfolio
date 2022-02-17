@@ -80,7 +80,7 @@ nav {
 
 /* Hero - start */
 .hero {
-    height: 100vh; /* 100% utav hela skärmens höjd */
+    height: 85vh; /* 85% utav hela skärmens höjd */
     /* 
     för en snabb genomgång över flexbox (100s): https://youtu.be/K74l26pE4YA
     för en mer genomgående förklaring för flexbox: https://youtu.be/u044iM9xsWU
