@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: black;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  z-index: 100;
+  border-bottom: 2px solid black;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-link img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.hero p {
+  color: #4b5563;
+}
+
+.hero h1,
+.hero p {
+  margin-bottom: 8px;
+}
+
+.hero-img {
+  margin-right: 20px;
+}
+
+.hero-img img {
+  height: 500px;
+}
+
+button {
+  border: solid 1px black; /* solid specificerar vilken typ av linje, 1px är tjockleken, black är för färgen*/
+  border-radius: 6px; /* border-radius kommer göra kanterna lite rundare */
+  width: 128px; /* en fixed width så att alla knappar är lika stora */
+  padding: 8px 0px; /* 8px topp och botten, 0px vänster och höger*/
+  background: white;
+  font-size: 14px;
+  color: black;
+}
