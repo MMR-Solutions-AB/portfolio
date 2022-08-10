@@ -3,7 +3,7 @@
 Detta projekt är ett portfolio för alla Techover studenter att lära sig ifrån och använda för eget bruk. Projektet är enbart byggt med HTML och CSS och ska hjälpa dig som student knypa ihop säcken för HTML och CSS genom att testa bygga något på egen hand. Ni ska alltså försöka bygga hemsidan på egen hand, men tveka inte på att be om hjälp så fort du fastnar. Vi upmanar dig även att använda koden i detta projekt som hjälp och vägledingen när du käer att du behöver det, all kod är väll dokumenterad men om du är osäker vad viss kod gör kan du alltid fråga handlearna så kan det hjälpa dig förstå koncepten som är oklara.
 
 ## Live demo 
-https://keen-yonath-140107.netlify.app/
+https://heuristic-swirles-ed126f.netlify.app/
 
 ## Ladda ner projektet och kör det
 1. tryck på den gröna kappen uppe till höger där det står **code**
