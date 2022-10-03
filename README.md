@@ -1,10 +1,10 @@
 # Portfolio
 
-Detta projekt är ett portfolio för alla Techover studenter att lära sig ifrån och använda för eget bruk. Projektet är byggt med HTML & CSS och ska hjälpa dig som student knyta ihop säcken genom att testa bygga något på egen hand. Ni ska alltså försöka bygga hemsidan på egen hand, men tveka inte på att be om hjälp så fort du fastnar. Vi uppmanar dig även att använda koden i detta projekt som hjälp och vägledning när du känner att du behöver det, all kod är väll dokumenterad men om du är osäker vad viss kod gör kan du alltid fråga en handledare som kan hjälpa dig förstå koncepten som är oklara.
+Detta projekt är ett portfolio för alla Techover studenter att lära sig ifrån och använda för eget bruk. Projektet är byggt med HTML & CSS och ska hjälpa dig som student knyta ihop säcken genom att testa bygga något på egen hand. Ni ska alltså försöka bygga hemsidan på egen hand, men tveka inte på att be om hjälp så fort du fastnar. Vi uppmanar dig även att använda koden i detta projekt som hjälp och vägledning när du känner att du behöver det, all kod är väll dokumenterad men om du är osäker vad viss kod gör kan du alltid fråga en handledare som kan hjälpa dig förstå koncepten som är oklara. [Här](https://techover.udemy.com/course/test-videos/learn/lecture/30913858#overview) är länken till Udemy
 
 ## Live demo för denna branch
 
-https://angry-beaver-dfec6b.netlify.app/
+[https://angry-beaver-dfec6b.netlify.app/](https://angry-beaver-dfec6b.netlify.app/)
 
 Hela hemsidan som är länkad ovan ska byggas för denna branch
 
@@ -21,4 +21,4 @@ Hela hemsidan som är länkad ovan ska byggas för denna branch
 8. Tryck på 'install'
 9. I VS code, högerklicka på `index.html` filen och tryck på 'Open with Live Server',
 
-Detta borde öppna en browser med hemsidan automatiskt, om det inte skulle fungera testa att manuellt navigera till http://127.0.0.1:5500/index.html.
+Detta borde öppna en browser med hemsidan automatiskt, om det inte skulle fungera testa att manuellt navigera till [http://127.0.0.1:5500/index.html](http://127.0.0.1:5500/index.html).
