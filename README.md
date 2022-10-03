@@ -1,23 +1,32 @@
 # Portfolio
 
-Detta projekt är ett portfolio för alla Techover studenter att lära sig ifrån och använda för eget bruk. Projektet är enbart byggt med HTML och CSS och ska hjälpa dig som student knypa ihop säcken för HTML och CSS genom att testa bygga något på egen hand. Ni ska alltså försöka bygga hemsidan på egen hand, men tveka inte på att be om hjälp så fort du fastnar. Vi upmanar dig även att använda koden i detta projekt som hjälp och vägledingen när du käer att du behöver det, all kod är väll dokumenterad men om du är osäker vad viss kod gör kan du alltid fråga handlearna så kan det hjälpa dig förstå koncepten som är oklara.
+Detta projekt är ett portfolio för alla Techover studenter att lära sig ifrån och använda för eget bruk. Projektet är byggt med HTML & CSS och ska hjälpa dig som student knyta ihop säcken genom att testa bygga något på egen hand. Ni ska alltså försöka bygga hemsidan på egen hand, men tveka inte på att be om hjälp så fort du fastnar. Vi uppmanar dig även att använda koden i detta projekt som hjälp och vägledning när du känner att du behöver det, all kod är väll dokumenterad men om du är osäker vad viss kod gör kan du alltid fråga en handledare som kan hjälpa dig förstå koncepten som är oklara. [Här](https://techover.udemy.com/course/test-videos/learn/lecture/30913858#overview) är länken till Udemy
 
-## Live demo 
-https://compassionate-ramanujan-625fcd.netlify.app/
+## Live demo för denna branch
 
-## Ladda ner projektet och kör det
-1. tryck på den gröna kappen uppe till höger där det står **code**
-2. tryck på **download zip**
-3. navigera till den nedladdade mappen i **finder** (om du har mac) eller **file explorer** (om du har windows)
-4. dubbeltryck på mappen, detta kommer unzippa mappen
-5. öppna den nyss unzippade mappen i VS code
-6. för nästa steg måste du ha installerat **live server** vilket är en extension i VS code. Ifall du redan har installerat **live server** kan du skippa detta steg. För att installera det trycker du på **extension** taben till vänster i VS code och sök efter **live server**, hitta den som är gjord utav *Ritwick Dey* (det borde vara den första du ser) och tryck på **install**
-7. i VS code, högerklicka på `index.html` filen och tryck på **Open with Live Server**. Detta borde öppna en browser med hemsidan automatiskt, om den inte gör det testa att manuellt navigera till http://127.0.0.1:5500/index.html.
+[https://compassionate-ramanujan-625fcd.netlify.app/](https://compassionate-ramanujan-625fcd.netlify.app/)
 
-## Om du stöter på problem
-1. hör av dig till Matheus i Slack, han har satt upp detta projekt och kommer kunna hjälpa dig med alla problem du stöter på
-2. ifall du skulle vilja boka in en handlednings tid kan du göra det med följande handledare
-    1. Matheus - https://calendly.com/matheus-mendes-1/handledning
-    2. Marcus - https://calendly.com/marcuspousette/techover-handledning
-    3. Nabil - https://calendly.com/nabil-hayek/hanledning
-4. du kan även höra av dig i *general* kanalen i Slack och förklara ditt problem så kommer någon hjälpa dig
+För denna branch ska du göra följande:
+
+1. För projekt korten ska du ändra fonten på texten (detta inkluderar ej knappens font) till Piazzolla, du kan hitta denna font hos [Google fonts](https://fonts.google.com/). Du ska även ändra text färgen på titeln i projekt kortet till #e0f2fe och under texten till #f0f9ff.
+2. När man hovrar över projekt ska bilden bli zoomad!
+3. Lägg till ett nytt projekt
+4. Lägg till en border-radius på 10px för alla projekt kort
+5. Lägg till en twitter ikon bredvid alla andra ikoner uppe till höger i navbaren. Du kan hitta twitter ikonen på hemsidan [feather](https://feathericons.com/). När du har hittat ikonen kan du enkelt bara trycka på den för att ladda ner!
+
+Här är en länk till en 2 minuter video som förklarar visuellt vad ni ska göra [https://app.vaam.io/share/d3fPxgO](https://app.vaam.io/share/d3fPxgO)
+
+## Följ dessa steg för att ladda ner projektet
+
+1. Fork:a repot genom att först trycka på **Fork** knappen höst upp till höger, sen kommer GitHub be dig ge projektet ett namn, en beskrivning och sist kommer det finnas en checkruta för **_Copy the day-1 branch only_**, den ska **INTE** vara checkad.
+   ![Image](https://img-c.udemycdn.com/redactor/raw/article_lecture/2022-03-08_12-56-49-12f9e24ce961855ad9f0b55f43fc6e64.png)
+2. Repot kommer nu kopieras över till din egna profil. Du ska nu clone:a ner repot från din profil.
+3. Navigera till den nedladdade mappen och öppna den i VS Code
+4. Se till att du är på **setup** branchen
+5. Skapa en **index.html** och **style.css** fil i VS code
+6. För nästa steg måste du ha installerat 'live server' vilket är en extension i VS code. (Ifall du redan har installerat 'live server' kan du skippa detta steg.)
+7. För att installera tryck på 'extension' tabben till vänster i VS code och sök efter 'live server' - Hitta den som är gjord utav **Ritwick Dey** (det borde vara den första du ser)
+8. Tryck på 'install'
+9. I VS code, högerklicka på `index.html` filen och tryck på 'Open with Live Server',
+
+Detta borde öppna en browser med hemsidan automatiskt, om det inte skulle fungera testa att manuellt navigera till [http://127.0.0.1:5500/index.html](http://127.0.0.1:5500/index.html).
